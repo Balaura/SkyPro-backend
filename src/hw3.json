@@ -1,0 +1,351 @@
+{
+     "info": {
+          "_postman_id": "unique-id-here",
+          "name": "Express MongoDB REST API",
+          "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+     },
+     "item": [
+          {
+               "name": "Users",
+               "item": [
+                    {
+                         "name": "Get All Users",
+                         "request": {
+                              "method": "GET",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users"
+                                   ]
+                              }
+                         }
+                    },
+                    {
+                         "name": "Create User",
+                         "request": {
+                              "method": "POST",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users"
+                                   ]
+                              },
+                              "header": [
+                                   {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                   }
+                              ],
+                              "body": {
+                                   "mode": "raw",
+                                   "raw": "{\n  \"name\": \"John\",\n  \"lastName\": \"Doe\",\n  \"username\": \"johndoe\"\n}"
+                              }
+                         }
+                    },
+                    {
+                         "name": "Get User by ID",
+                         "request": {
+                              "method": "GET",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users/:id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users",
+                                        ":id"
+                                   ],
+                                   "variable": [
+                                        {
+                                             "key": "id",
+                                             "value": "user_id_here"
+                                        }
+                                   ]
+                              }
+                         }
+                    },
+                    {
+                         "name": "Update User",
+                         "request": {
+                              "method": "PATCH",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users/:id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users",
+                                        ":id"
+                                   ],
+                                   "variable": [
+                                        {
+                                             "key": "id",
+                                             "value": "user_id_here"
+                                        }
+                                   ]
+                              },
+                              "header": [
+                                   {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                   }
+                              ],
+                              "body": {
+                                   "mode": "raw",
+                                   "raw": "{\n  \"name\": \"Jane\"\n}"
+                              }
+                         }
+                    },
+                    {
+                         "name": "Delete User",
+                         "request": {
+                              "method": "DELETE",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users/:id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users",
+                                        ":id"
+                                   ],
+                                   "variable": [
+                                        {
+                                             "key": "id",
+                                             "value": "user_id_here"
+                                        }
+                                   ]
+                              }
+                         }
+                    }
+               ]
+          },
+          {
+               "name": "Books",
+               "item": [
+                    {
+                         "name": "Get All Books",
+                         "request": {
+                              "method": "GET",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/books",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "books"
+                                   ]
+                              }
+                         }
+                    },
+                    {
+                         "name": "Create Book",
+                         "request": {
+                              "method": "POST",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/books",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "books"
+                                   ]
+                              },
+                              "header": [
+                                   {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                   }
+                              ],
+                              "body": {
+                                   "mode": "raw",
+                                   "raw": "{\n  \"title\": \"1984\",\n  \"author\": \"George Orwell\",\n  \"year\": 1949\n}"
+                              }
+                         }
+                    },
+                    {
+                         "name": "Get Book by ID",
+                         "request": {
+                              "method": "GET",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/books/:id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "books",
+                                        ":id"
+                                   ],
+                                   "variable": [
+                                        {
+                                             "key": "id",
+                                             "value": "book_id_here"
+                                        }
+                                   ]
+                              }
+                         }
+                    },
+                    {
+                         "name": "Update Book",
+                         "request": {
+                              "method": "PATCH",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/books/:id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "books",
+                                        ":id"
+                                   ],
+                                   "variable": [
+                                        {
+                                             "key": "id",
+                                             "value": "book_id_here"
+                                        }
+                                   ]
+                              },
+                              "header": [
+                                   {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                   }
+                              ],
+                              "body": {
+                                   "mode": "raw",
+                                   "raw": "{\n  \"year\": 1950\n}"
+                              }
+                         }
+                    },
+                    {
+                         "name": "Delete Book",
+                         "request": {
+                              "method": "DELETE",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/books/:id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "books",
+                                        ":id"
+                                   ],
+                                   "variable": [
+                                        {
+                                             "key": "id",
+                                             "value": "book_id_here"
+                                        }
+                                   ]
+                              }
+                         }
+                    }
+               ]
+          },
+          {
+               "name": "Error Handling",
+               "item": [
+                    {
+                         "name": "Non-existent Route",
+                         "request": {
+                              "method": "GET",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/nonexistent",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "nonexistent"
+                                   ]
+                              }
+                         }
+                    },
+                    {
+                         "name": "Non-existent User",
+                         "request": {
+                              "method": "GET",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users/nonexistent_id",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users",
+                                        "nonexistent_id"
+                                   ]
+                              }
+                         }
+                    },
+                    {
+                         "name": "Invalid User Data",
+                         "request": {
+                              "method": "POST",
+                              "url": {
+                                   "raw": "http://localhost:3005/api/users",
+                                   "protocol": "http",
+                                   "host": [
+                                        "localhost"
+                                   ],
+                                   "port": "3005",
+                                   "path": [
+                                        "api",
+                                        "users"
+                                   ]
+                              },
+                              "header": [
+                                   {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                   }
+                              ],
+                              "body": {
+                                   "mode": "raw",
+                                   "raw": "{\n  \"name\": \"J\",\n  \"lastName\": \"D\",\n  \"username\": \"jd\"\n}"
+                              }
+                         }
+                    }
+               ]
+          }
+     ]
+}
